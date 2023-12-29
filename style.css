@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(252, 252, 252);
+    color: black;
+    background-image: url(background8.jpg);
+    background-size: cover;
+    height: 100px;
+   
+}
+
+div#interface {
+    width: 900px;
+    background-color: #fff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px 10px 10px 10px;
+}
+
+
+/* FORMATAÇÃO DO MENU*/
+nav#menu {
+    display: block;
+}
+
+/*posicao do menu*/
+nav#menu ul {
+    list-style: none; /*some os marcadores */
+    text-transform: uppercase; /*letras em maiusculo*/
+    position: absolute;
+    top: -20px;
+    left: 1400px;
+}
+
+/*display do menu*/
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    transition: background-color 1s;
+}
+
+
+/*interacao mouse menu*/
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+
+/*visual menu h1*/
+nav#menu h1 {
+    display: none;
+}
+
+
+nav#menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*interacao mouse menu*/
+nav#menu a:hover{
+    color: #fff;
+}
+
+/*mexe nos textos dos artigos*/
+article#noticia_principal h2 {
+    font-size: 20pt;
+    color: black;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px;
+}
+
+/*mexe nas imagens dos artigos*/
+article#noticia_principal img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    
+}
+
+
+footer#rodape {
+    border-top: 1px solid #606060;
+}
+
+
+footer#rodape p {
+    text-align: center;
+}
+
+/*formatacao do paragrafo */
+p {
+    font-family: Arial;
+    font-size: 12pt;
+    color: black;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1225px;
+    top: 50px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 100px;
+}
+
+header#cabecalho h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 15pt;
+    color: #888;
+    padding: 0px;
+    
+}
+
+body#h2 p {
+    width: 300px; /* Largura da caixa de texto */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid white; /* Borda sólida com cor cinza */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+}
+
+@media screen and (max-width: 768px) {
+    section, aside {
+        width: 100%;
+        padding: 0;
+    }
+        
+}
+
+@media screen and (max-width: 600px) {
+    nav li {
+        float: none;
+        text-align: center;
+        width: 100%
+    }
+
+}
